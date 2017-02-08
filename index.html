@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Day Two</title>
+    <!-- Link in the foreign style sheets above your local styles.css file.  -->
+
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Pangolin" rel="stylesheet">
+    <!-- fontawesome.io -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- local style sheet -->
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header>
+      <!-- Shopping cart from fontawesome.io.  Style these like you would a normal font/text -->
+      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    </header>
+
+    <section>
+      <div class="grab-paragraph">
+        <p class="paragraph-white">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid est, unde voluptas nesciunt nulla, earum, illo quod veritatis ipsa accusamus tempore, consequatur expedita numquam repellat sapiente optio harum dolore eveniet.
+        </p>
+      </div>
+      <div id="puppy-background">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid est, unde voluptas nesciunt nulla, earum, illo quod veritatis ipsa accusamus tempore, consequatur expedita numquam repellat sapiente optio harum dolore eveniet.
+        </p>
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid est, unde voluptas nesciunt nulla, earum, illo quod veritatis ipsa accusamus tempore, consequatur expedita numquam repellat sapiente optio harum dolore eveniet.
+        <!-- span tags are a good way to grab small amounts of text.  displays inline by default -->
+        <span>This Is more text</span>
+      </div>
+    </section>
+
+    <!-- Accessibility -->
+    <img src="./bruiser.jpg" alt="Image of bruiser puppy" title="Image of bruiser puppy">
+    <a href="https://www.google.com" title="link to google" target="_blank">Google</a>
+
+  <!-- font-size: em in your css.   em multiplies its size by the parent element.  So each div gets progressively larger font size. -->
+    <div class="font-by-em">
+        Text em
+      <div class="font-by-em">
+        Text em
+        <div class="font-by-em">
+        Text em
+        </div>
+      </div>
+    </div>
+
+    <!-- font-size: rem in your css.   rem multiplies its size by the root element (the body or the html).  So each divs font size is the same. -->
+    <div class="font-by-rem">
+        Text rem
+      <div class="font-by-rem">
+        Text rem
+        <div class="font-by-rem">
+        <em>Text rem</em>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

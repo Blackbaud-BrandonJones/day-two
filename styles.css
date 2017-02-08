@@ -1,0 +1,108 @@
+/********************************
+          OVERALL STYLES
+********************************/
+
+/*
+*  using the * selector, we are grabbing all elements on the page.
+*  box-sizing: border-box makes it so when we specify the width of an element
+*  it includes the border, not just the content and padding.
+*/
+* {
+  box-sizing: border-box;
+}
+
+/*
+* The body has some default styles applied to it.   we eliminate the margin so our content
+* can reach the edge of our webpage.
+*/
+body {
+  background-color: red;
+  margin: 0;
+}
+
+/*
+* we specify the font family we included from google fonts.   the values 'Oswald', sans-serif
+* means Try to use Osawald, if that doesn't work, use sans-serif as a backup.
+*/
+p {
+  font-family: 'Oswald', sans-serif;
+}
+
+section {
+  height: 500px;
+}
+
+/********************************
+          First Section
+********************************/
+
+/*
+*  we can change the height, width, padding, border, and colors of each element.
+*  display:  block = nothing can sit to the right or left of this element
+*  display: inline-block = will only be as wide as specified, things can sit to the
+*  right or left.
+*  display: inline = cannot specify the height of an element, but will sit in line
+*  with the surrounding content.
+*/
+div {
+    background-color: white;
+    padding: 10px, 5px;
+    margin: 1px;
+    border: 5px solid yellow;
+    width: 33%;
+    height: 50%;
+    display: inline-block;
+}
+
+span {
+  color: blue;
+}
+
+#puppy-background {
+  background-image: url("./bruiser.jpg");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Pangolin', cursive;
+}
+
+
+.font-by-em {
+  font-size: 2em;
+  border: 1px solid yellow;
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+.font-by-rem {
+  font-size: 2rem;
+  border: 1px solid yellow;
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+/*
+* by being more specific with our selectors, we can over write styles.
+*  eg.   by selecting the p tags inside the containers with .grab-paragraph class,
+*  we can over write the style of the paragraph-white class, because we are more specific.
+*/
+.grab-paragraph > p {
+  color: #333333;
+}
+
+.paragraph-white {
+  color: white;
+}
+
+/*
+* other text / font styling properties:
+* text-align:    this changes where our text/some content aligns, left, center, right etc.
+* line-height:  the amount of space between lines of text
+* text-transform:  changes the text itself,  uppercase, capitolize, lowercase etc.
+* text-decoration:  things like underline, or strike through
+* font-weight:   bolder, lighter, thinner, text weight on the page
+* font-style:  italic, though its often better to use <em> </em> tags in your html for italic  * text if you want it emphasized.
+* letter spacing:   the spaces between each letter in the text.
+*/
